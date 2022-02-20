@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .bod
+    img(src='/img/eqglobal-text.png', alt='EQ_GLobal Logo')(style="height:45px; width:180px")
+    p Welcome to EQ Global
+  -if(flag == 1)
+    .alert.alert-danger(role="alert") #{message}
+  -if(flag == 0)
+    .alert.alert-success(role="alert") #{message}
+  -if(login == true)
+    .alert.alert-success(role="alert") #{message} 
+    -if(role == 'ADMIN')
+      a(href="/admin") Go to Dashboard
+    -else if(role == 'Sales')
+      a(href="/sales-d") Go to Dashboard
+    -else
+      a(href="/advertisement") Go to Dashboard
+  -else
+    .row
+      .col-lg-1
+      .col-lg-4
+        include include/login
+      .col-lg-1 
+      .col-lg-5
+        include include/registration
+      .col-lg-1

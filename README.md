@@ -1,10 +1,5 @@
-# EQ-Global
+# login-registration-system-with-authentication-nodejs-express-mysql
+In this repoistory have login and registration system using nodejs, express and also used mysql for database.
+express-session and validation also used in this project.
 
-(Admin) 
-Id-Snowflake@mail.com
-(Advertisement user)
-Id-adver@newrole.com
-(Sales user)
-Id- sales@newrole.com
-Password for all users-
-Snowflake@1234
+

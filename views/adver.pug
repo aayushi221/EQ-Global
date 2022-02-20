@@ -1,0 +1,72 @@
+extends layout 
+block content
+    .header
+      - var user = {role : message};
+      if user.role == "ADMIN"
+        a.logo(href='/admin')
+          img(src='/img/eqglobal-text.png', alt='EQ_GLobal Logo')(style="height:45px; width:180px")
+      else if user.role == 'Sales'
+        a.logo(href='/sales-d')
+          img(src='/img/eqglobal-text.png', alt='EQ_GLobal Logo')(style="height:45px; width:180px")
+      else if user.role == 'Advertisement'
+        a.logo(href='/advertisement')
+          img(src='/img/eqglobal-text.png', alt='EQ_GLobal Logo')(style="height:45px; width:180px")
+      .header-right
+        - var user = {role : message};
+        if user.role == "Sales"
+          a(href='/readme') Readme
+          a(href='/order_detail') Order Details
+          a(href="/Sales") Sales
+          a(href="/logout") Logout
+        
+        else if user.role == "Advertisement"
+          a(href='/readme') Readme
+          a(href='/smp') SMP
+          a(href="/ott") OTT
+          a.active(href="/adver") Advertisement
+          a(href="/logout") Logout
+        else 
+          a(href='/readme') Readme
+          a(href='/order_detail') Order Details
+          a(href="/Sales") Sales
+          a(href='/smp') SMP
+          a(href="/ott") OTT
+          a.active(href="/adver") Advertisement
+          a(href="/logout") Logout
+
+    .tag-line
+      h2 Advertisement
+
+    #viz1644652421552.tableauPlaceholder(style='position: relative')
+      object.tableauViz(style='display:none;')
+        param(name='host_url', value='https%3A%2F%2Fpublic.tableau.com%2F')
+        |  
+        param(name='embed_code_version', value='3')
+        |  
+        param(name='site_root', value='')
+        param(name='name', value='ADsAnalytics-WithSales/Dashboard2')
+        param(name='tabs', value='no')
+        param(name='toolbar', value='yes')
+        param(name='animate_transition', value='yes')
+        param(name='display_static_image', value='yes')
+        param(name='display_spinner', value='yes')
+        param(name='display_overlay', value='yes')
+        param(name='display_count', value='yes')
+        param(name='language', value='en-GB')
+        param(name='filter', value='publish=yes')
+    script(type='text/javascript').
+      var divElement = document.getElementById('viz1644652421552');          
+      var vizElement = divElement.getElementsByTagName('object')[0];          
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else { vizElement.style.width='100%';vizElement.style.height='1977px';}          
+      var scriptElement = document.createElement('script');          
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';          
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+    footer.bg-light.footer
+        .container
+          .row
+            .col-lg-12.text-center.text-lg.my-auto.h-100
+                ul.list-inline.mb-2
+                p.text-muted.small.mb-4.mb-lg-0 &copy; EQ_Global 2022. All Rights Reserved.

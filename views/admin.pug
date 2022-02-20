@@ -1,0 +1,128 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    title Home - Brand
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic')
+    link(rel='stylesheet', href='/fonts/simple-line-icons.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel='stylesheet', href='/css/untitled.css')
+    script(src='/js/roles.js')
+        
+  body
+    nav.navbar.navbar-light.navbar-expand.bg-light.navigation-clean
+      .container
+        img(src='/img/eqglobal-text.png', alt='EQ_GLobal Logo')(style="height:45px; width:180px")
+        button.navbar-toggler(data-bs-toggle='collapse', data-bs-target='#navcol-1')
+        #navcol-1.collapse.navbar-collapse
+          a.btn.btn-primary.ms-auto(role='button', href='/readme') Readme
+          a.btn.btn-primary.ms-2(role='button', href='/logout') Logout
+    header.text-center.text-black(style="background-color:white;")
+      img(src='/img/ufashion.jpeg', alt='UFashion Logo').text-center
+      .overlay
+        //h1 UFashion
+        
+        
+      .container
+        .row
+          .col-xl-4.position-relative
+            h3(style="margin-top:45px;") Our Presence
+            img(src='/img/globe.jpg', alt='UFashion Logo')(style="height:200px; width:320px")
+            p(style="margin-top:25px;") We are an internationally recognized brand and are present and have our footprints over the globe across 5+ states in the USA.
+
+          .col-xl-4.position-relative
+            h3(style="margin-top:45px;") Our Products
+            img(src='/img/products.jpg', alt='UFashion Logo').text-center
+            p(style="margin-top:25px;") We provide you with a vast variety of products ranging from clothing, footwear, accessories, bags, watches etc.
+          .col-xl-4.position-relative
+            h3(style="margin-top:45px;") Our Value
+            img(src='/img/dollar.jpg', alt='UFashion Logo').text-center
+            p(style="margin-top:25px;") We're proud to say that UFashion is one of the top 5 fashion retail brands.
+    br
+    br
+    br 
+    br 
+    br 
+    br
+    .container
+      h4 #{message} Dashboard
+    section.text-center.bg-light.features-icons
+    
+      .container
+        .row.sales.mb-5      
+          .col-lg-4
+            a(href='/order_detail')
+              .mx-auto.features-icons-item.mb-5.mb-lg-0.mb-lg-3
+                .d-flex.features-icons-icon
+                  i.icon-layers.m-auto.text-primary(data-bss-hover-animate='pulse')
+                h3 Order Details
+                p.lead.mb-0     
+          .col-lg-4
+            a(href='/sales')
+              .mx-auto.features-icons-item.mb-5.mb-lg-0.mb-lg-3
+                .d-flex.features-icons-icon
+                  i.icon-briefcase.m-auto.text-primary(data-bss-hover-animate='pulse')
+                h3 Sales
+                p.lead.mb-0     
+          .col-lg-4
+            a(href='/adver')
+              .mx-auto.features-icons-item.mb-5.mb-lg-0.mb-lg-3
+                .d-flex.features-icons-icon
+                  i.icon-chart.m-auto.text-primary(data-bss-hover-animate='pulse')
+                h3 Advertisement
+                p.lead.mb-0
+        
+        .row.advertisement          
+          .col-lg-4
+            a(href='/smp')
+              .mx-auto.features-icons-item.mb-5.mb-lg-0.mb-lg-3
+                .d-flex.features-icons-icon
+                  i.icon-social-instagram.m-auto.text-primary(data-bss-hover-animate='pulse')
+                h3 Social Media Platform
+                p.lead.mb-0     
+          .col-lg-4.mb-5
+            a(href='/ott')
+              .mx-auto.features-icons-item.mb-5.mb-lg-0.mb-lg-3
+                .d-flex.features-icons-icon
+                  i.icon-screen-desktop.m-auto.text-primary(data-bss-hover-animate='pulse')
+                h3 OTT
+                p.lead.mb-0 
+                
+    section.showcase
+    //- section.text-center.text-white.call-to-action(style='background:url("") no-repeat center center;background-size:cover;')
+    //-   .overlay
+    //-   .container
+    //-     .row
+    //-       .col-xl-9.mx-auto.position-relative
+    //-         h2.mb-4
+    //-       .col-md-10.col-lg-8.col-xl-7.mx-auto.position-relative
+    //-         form
+    //-           .row
+    //-             .col-12.col-md-9.mb-2.mb-md-0
+    //-               //input.form-control.form-control-lg(type='email', placeholder='Enter your email...')
+    //-             .col-12.col-md-3
+    //-               //button.btn.btn-primary.btn-lg(type='submit') Subscribe!
+    footer.bg-light.footer
+      .container
+        .row
+          .col-lg-12.text-center.text-lg.my-auto.h-100
+            ul.list-inline.mb-2
+              li.list-inline-item
+                a(href='#') About
+              li.list-inline-item
+                span &sdot;
+              li.list-inline-item
+                a(href='#') Contact
+              li.list-inline-item
+                span &sdot;
+              li.list-inline-item
+                a(href='#') Terms of &nbsp;Use
+              li.list-inline-item
+                span &sdot;
+              li.list-inline-item
+                a(href='#') Privacy Policy
+            p.text-muted.small.mb-4.mb-lg-0 &copy; EQ_Global 2022. All Rights Reserved.
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/js/bs-init.js')
