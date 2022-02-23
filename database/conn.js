@@ -7,8 +7,8 @@ require('dotenv').config();
 
 var conn = snowflake.createConnection({
     account: "kq82275.ap-south-1.aws",
-    username: "UDIT21",
-    password: "Snowflake@1234",
+    username: "*****",
+    password: "********",
     role: "ACCOUNTADMIN",
     database: "DEMO_DB",
     schema: "PUBLIC"
